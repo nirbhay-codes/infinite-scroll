@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* min-height: 100vh; */
+  font-family: Bebas Neue, sans-serif;
+  background: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.loader {
+  /* position is fixed so that scrolling also does not change its position */
+  position: fixed;
+  /* mark all margins as 0 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  /* top == offset from top edge into the page; left == right offset from left edge into the page  */
+  top: 50%;
+  left: 50%;
+
+  /* without transform translate, the top and left works but it only makes the top-left of the image to be in the center.  */
+  /* but we want the whole image to be in the center regardless of the size of the image; so transform:translate is accounting for centering the image within the center of the page */
+  transform: translate(-50%, -50%);
+}
