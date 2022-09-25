@@ -40,3 +40,25 @@ h1 {
   /* but we want the whole image to be in the center regardless of the size of the image; so transform:translate is accounting for centering the image within the center of the page */
   transform: translate(-50%, -50%);
 }
+
+/* Image container */
+.image-container {
+  /* top-bottom = 10px each and left-right = 30% */
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}
